@@ -1,0 +1,55 @@
+import { Story, Preview, Meta, Props, html } from '@open-wc/demoing-storybook';
+
+import '../owc-demo.js';
+
+<Meta 
+  title="OwcDemo"
+  parameters={{
+    component: "owc-demo",
+    options: { selectedPanel: "storybookjs/knobs/panel" }
+  }}
+/>
+
+# OwcDemo
+
+A component for...
+
+## Features:
+
+- a
+- b
+- ...
+
+## How to use
+
+### Installation
+
+```bash
+yarn add owc-demo
+```
+
+```js
+import 'owc-demo/owc-demo.js';
+```
+
+<Preview withToolbar>
+  <Story name="Simple">
+    {html`
+      <owc-demo></owc-demo>
+    `}
+  </Story>
+</Preview>
+
+## API
+
+<Props of="owc-demo" />
+
+## Variations
+
+###### Custom Title
+
+<Story name="Custom Title">
+  {html`
+    <owc-demo .title=${'Hello World'}></owc-demo>
+  `}
+</Story>
